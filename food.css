@@ -1,0 +1,179 @@
+/* 主体右边盒子 */
+.leftMain>li {
+    height: 40px;
+    background-color: orange;
+    font-size: 20px;
+    line-height: 40px;
+    color: #fff;
+    font-weight: 700;
+    padding: 0 10px;
+    border-bottom-right-radius: 50px;
+}
+
+.leftmini>li{
+    height: 35px;
+    font-size: 17px;
+    line-height: 35px;
+    padding: 0 10px;
+    border-bottom: 1px solid #cfcfcf;
+    border-left: 1px solid #cfcfcf;
+    border-right: 1px solid #cfcfcf;
+}
+/* 主体左边盒子 */
+.rightbig{
+    width: 60%;
+    height: 400px;
+}
+
+.rightbig img{
+    height: 100%;
+    width: 100%;
+} 
+
+.rightmin{
+    margin-left: 2%;
+    width: 38%;
+    height: 400px;
+}
+
+.minbox {
+    margin-top: 10px;
+    width: 48%;
+    height: 190px;
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-right: 2%;
+}
+
+.minbox img {
+    width: 100%;
+    height: 160px;
+}
+
+.minbox span {
+    float: right;
+    color: orange;
+}
+/* 主体下方盒子 */
+.leftmain{
+    width: 100%;
+    /* height: 300px; */
+    /* background-color: red; */
+}
+
+.mianhead {
+    /* box-sizing: border-box; */
+    padding: 10px;
+    height: 30px;
+    border-bottom: 3px solid #bebdbd;
+}
+
+.headline {
+    /* box-sizing: border-box; */
+    border-left: 3px solid orange;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+.mianhead span {
+    float: right;
+    font-size: 10px;
+    line-height: 30px;
+    color: #1cb93e;
+}
+
+.mianbox {
+    box-sizing: border-box;
+    margin-top: 10px;
+    height: 240px;
+    width: 32%;
+    background-color: #fff;
+    margin-left: 1%;
+}
+
+.mianbox img{
+    height: 200px;
+    width: 100%;
+}
+
+.title {
+    font-size: 15px;
+    color: #898989;
+    line-height: 20px;
+}
+
+.price {
+    font-size: 10px;
+    color: orange;
+    line-height: 15px;
+}
+/* 底部 */
+.footer {
+    box-sizing: border-box;
+    height: 170px;
+    width: 100%;
+    /* background-color: pink; */
+    padding-top: 15px;
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+}
+
+.footermain {
+    box-sizing: border-box;
+    width: 100%;
+    height: 140px;
+    border: 1px solid rgb(207, 207, 207);
+    padding: 10px 50px;
+    position: relative;
+}
+.footwrap{
+    height: 170px;
+}
+.footbox {
+    height: 120px;
+    width: 225px;
+    line-height: 15px;
+    font-size: 13px;
+    font-weight: 700;
+}
+.pos {
+    margin-left: 30px;
+}
+.footbox img {
+    width: 100%;
+    height: 100px;
+}
+
+.footbox span {
+    float: right;
+    color: orange;
+}
+
+.iconleft {
+    display: block;
+    height: 70px;
+    width: 50px;
+    top: 30px;
+    position: absolute;
+    left: 0px;
+}
+.iconright {
+    display: block;
+    height: 70px;
+    width: 50px;
+    top: 30px;
+    position: absolute;
+    right: 0px;
+}
+
+.footmini {
+    height: 15px;
+    font-size: 10px;
+    background-color: rgb(34, 202, 18);
+    color: #fff;
+    position: absolute;
+    top: -15px;
+    left: 50px;
+}

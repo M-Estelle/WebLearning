@@ -1,0 +1,160 @@
+/* 公共样式定义 */
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+li {
+    list-style: none;
+}
+textarea {
+    overflow: auto;
+    resize: none;
+}
+a {
+    text-decoration: none;
+    outline: 0;
+     color: #fff; 
+}
+.clearfix:before,.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+.floatLeft{
+    float: left;
+}
+
+.floatRight{
+    float: right;
+}
+
+/* body,html {
+    background: #f6f6f6;
+    font-family: "Hiragino Sans GB","Microsoft YaHei","微软雅黑",tahoma,arial,simsun,"宋体";
+    font-size: 14px;
+    width: 100%;
+    line-height: 1.5;   
+} */
+
+body,html {
+ height: 100%;
+ /* overflow-x: hidden; */
+}
+
+.all {
+    height: 100%;
+    width: 100%;
+    /* background-color: #898989; */
+}
+
+/* 顶部设置 */
+.w {
+    padding: 0 50px;
+}
+/* 顶部细条 */
+.topSet {
+    height: 25px;
+    width: 100%;
+    background-color: #f3f3f3;
+    padding: 1px 50px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e9e9e9;
+    position: fixed;
+    top: 0;
+}
+
+.topsetWrap{
+    height: 25px;
+}
+.topPic {
+    width: 11.5px;
+    height: 11.5px;
+}
+
+.topSet span{
+    line-height: 11.5px;
+    font-size: 10px;
+    margin-left: 2px;
+}
+
+.topText {
+    color: orange;
+}
+
+.topRight {
+    display: block;
+    height: 11.5px;
+    margin-top: 5px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+/* 顶部图片 */
+.topNav {
+    height: 100px;
+    width: 100%;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    margin: 5px 0;
+}
+.topone {
+    height: 100%;
+    width: 38%;
+}
+.toptwo{
+    height: 100%;
+    width: 60%;
+}
+/* 顶部导航栏 */
+.topLine {
+  height: 35px;
+  width: 100%;
+  background-color: orange;
+  box-sizing: border-box;
+  padding:0 27%;
+}
+.topLine li {
+    height: 35px;
+    width: 13%;
+    color: #fff;
+    display: inline-block;
+    line-height: 35px;
+    font-weight: 700;
+    text-align: center;
+}
+.topLine li:hover {
+    background-color: #fae900;
+    color: #000;
+}
+/* 内容设置 */
+.container{
+    margin-top: 10px;
+    width: 100%;
+    /* height: 800px; */
+    box-sizing: border-box;
+    /* background-color: rgb(219, 114, 202); */
+}
+
+.leftBox{
+    width: 20%;
+    height: auto;
+    background-color: green;
+    box-sizing: border-box;
+    background-color: rgb(248, 248, 248);
+}
+
+.rightBox{
+    width: 77%;
+    /* height: 500px; */
+    /* background-color: yellow; */
+    margin-left: 2%;
+    box-sizing: border-box;
+}

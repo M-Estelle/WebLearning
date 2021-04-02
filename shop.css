@@ -1,0 +1,134 @@
+/* 主体右边盒子 */
+.leftMain>li {
+    height: 30px;
+    background-color: rgb(214, 213, 213);
+    font-size: 15px;
+    line-height: 30px;
+    color: #000;
+    font-weight: 700;
+    padding: 0 10px;
+}
+
+.leftmini>li{
+    height: 25px;
+    font-size: 12px;
+    line-height: 25px;
+    padding: 0 10px;
+    border-bottom: 1px solid #cfcfcf;
+    border-left: 1px solid #cfcfcf;
+    border-right: 1px solid #cfcfcf;
+}
+.leftmini>li::after {
+    content: ">";
+    color: #898989 ;
+    float: right;
+}
+/* 主体左边盒子 */
+.rightbig{
+    width: 100%;
+}
+
+.mianhead {
+    /* box-sizing: border-box; */
+    padding: 10px;
+    height: 24px;
+    background-color: orange;
+}
+
+.headline {
+    /* box-sizing: border-box; */
+    line-height: 24px;
+   color: #fff;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+.topbox {
+    height: 340px;
+    width: 24%;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.toppicbox {
+    width: 100%;
+    height: 280px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgb(245, 245, 245);
+}
+
+.toppicbox img{
+  width: 100%;
+  height: 260px;
+}
+
+.topprice {
+    margin-top: 10px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 15px;
+    color: red;
+    font-weight: 700;
+}
+
+.topprice span {
+    font-size: 13px;
+    font-weight: normal;
+    float: right;
+    color: rgb(202, 202, 202);
+}
+
+.topdescription {
+    height: 35px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.internal {
+    margin-left: 1%;
+}
+
+/* 底部 */
+.footer{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(247, 245, 245);
+}
+
+.footerLine {
+  height: 60px;
+  width: 100%;
+  background-color: rgb(102, 10, 37);
+  box-sizing: border-box;
+}
+
+.footerLine li {
+    margin-top: 25px;
+    height: 35px;
+    font-size: 25px;
+    width: 19%;
+    color: rgb(250, 236, 240);
+    display: inline-block;
+    line-height: 35px;
+    text-align: center;
+}
+
+.footcontent{
+    height: 240px;
+    width: 16.5%;
+    /* padding-left: 20%; */
+}
+.footbox {
+    width: 100%;
+    padding-left: 20%;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 700;
+    color: rgb(51, 9, 25);
+}
+ .footcontent .first {
+    font-size: 20px;
+    line-height: 40px;
+    color: #000;
+} 

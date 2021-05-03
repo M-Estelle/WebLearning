@@ -1,4 +1,4 @@
-/* 主体右边盒子 */
+/* 主体左边盒子 */
 .leftMain>li {
     height: 30px;
     background-color: rgb(214, 213, 213);
@@ -23,9 +23,9 @@
     color: #898989 ;
     float: right;
 }
-/* 主体左边盒子 */
+/* 主体右边盒子 */
 .rightbig{
-    width: 100%;
+    width: 75%;
 }
 
 .mianhead {
@@ -60,7 +60,7 @@
 
 .toppicbox img{
   width: 100%;
-  height: 260px;
+  height: 235px;
 }
 
 .topprice {
@@ -89,22 +89,45 @@
     margin-left: 1%;
 }
 
+.botbox {
+    height: 400px;
+    width: 24%;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+
+.botpicbox {
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgb(245, 245, 245);
+}
+
+.botpicbox img{
+  width: 100%;
+  height: 325px;
+  margin-bottom: 10px;
+}
+
 /* 底部 */
 .footer{
+    margin-top: 20px;
     width: 100%;
-    height: 300px;
-    background-color: rgb(247, 245, 245);
+    height: 340px;
+    background-color: #efefef;
 }
 
 .footerLine {
-  height: 60px;
+  height: 50px;
   width: 100%;
-  background-color: rgb(102, 10, 37);
+  background-color: #6a6665;
   box-sizing: border-box;
 }
 
 .footerLine li {
-    margin-top: 25px;
+    margin-top: 15px;
     height: 35px;
     font-size: 25px;
     width: 19%;
@@ -115,20 +138,95 @@
 }
 
 .footcontent{
-    height: 240px;
+    height:160px;
     width: 16.5%;
+    background-color: #efefef;
     /* padding-left: 20%; */
+    border-bottom: 2px solid #d0d0d0;
 }
 .footbox {
     width: 100%;
     padding-left: 20%;
-    font-size: 15px;
-    line-height: 25px;
+    font-size: 14px;
+    line-height: 23px;
     font-weight: 700;
     color: rgb(51, 9, 25);
+    position: relative;
+}
+.footpic {
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    width: 35px;
+    height: 30px;
+}
+.footline {
+    position: absolute;
+    top: 45px;
+    left: 14px;
+    height: 110px;
 }
  .footcontent .first {
     font-size: 20px;
     line-height: 40px;
     color: #000;
 } 
+/* 修改差异样式 */
+.topLine li:hover {
+    background-color: #8a282a;
+    color: #fff;
+}
+
+/* 右侧细栏 */
+
+.rightmin{
+    width:22% ;
+    margin-left:3%;
+}
+
+.min-botbox {
+    height: 205px;
+    width: 45%;
+    margin-top: 10px;
+    box-sizing: border-box;
+    font-size: 5px;
+}
+
+
+.min-botpicbox {
+    width: 100%;
+    height: 203px;
+    padding: 3px;
+    box-sizing: border-box;
+    border: 1px solid rgb(245, 245, 245);
+}
+
+.min-botpicbox img{
+    width: 100%;
+    height: 129px;
+    margin-bottom: 10px;
+}
+
+.min-internal {
+    margin-left: 8%;
+}
+
+/* 新增footer内容 */
+.padding-top {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.foot-line {
+    border-bottom: 1px solid #ccc;
+    font-size: 12px;
+    margin-top: 10px;;
+}
+
+.img {
+    width: 457px;
+    height: 40px;
+    display: block;
+    margin: 12px auto;
+    /* margin-top: 12px; */
+}

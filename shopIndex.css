@@ -1,18 +1,22 @@
+/* 主体边界距离修改 */
+.padd {
+    padding: 0 10px;
+}
 /* 主体右边盒子 */
 .leftMain>li {
-    height: 30px;
+    height: 35px;
     background-color: rgb(214, 213, 213);
     font-size: 15px;
-    line-height: 30px;
+    line-height: 35px;
     color: #000;
     font-weight: 700;
     padding: 0 10px;
 }
 
 .leftmini>li{
-    height: 25px;
+    height: 30px;
     font-size: 12px;
-    line-height: 25px;
+    line-height: 30px;
     padding: 0 10px;
     border-bottom: 1px solid #cfcfcf;
     border-left: 1px solid #cfcfcf;
@@ -25,8 +29,8 @@
 }
 /* 主体左边盒子 */
 .rightbig{
-    width: 75%;
-    height: 270px;
+    width: 72%;
+    height: 320px;
 }
 
 .rightbig img{
@@ -34,13 +38,123 @@
     width: 100%;
 } 
 
+.riMainriMain {
+    height: 320px;
+}
 
+.mianright {
+    width: 27%;
+    box-sizing: border-box;
+    margin-left: 1%;
+}
+.notice {
+    height: 190px;
+    /* background-color: orange; */
+    border: 1px solid #cfcfcf;
+    box-sizing: border-box;
+}
+.nopic {
+    height: 120px;
+    /* margin-top: 10px; */
+    box-sizing: border-box;
+    width: 100%;
+}
+.noTitle {
+    box-sizing: border-box;
+    width: 100%;
+    height: 30px;
+    background-color: #e9e9e9;
+    padding-left: 20px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.noContent{
+    box-sizing: border-box;
+    width: 100%;
+    height: 25px;
+    /* padding-left: 20px; */
+    font-size: 10px;
+    line-height: 25px;
+}
+.noContent::before{
+    content: "▪";
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+    color: #979797;
+}
+
+.nobox {
+    width: 30%;
+    float: left;
+    height: 30px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    margin-left: 2%;
+}
+.nobox img{
+    width: 100%;
+    height: 100%;
+}
+.hotpot {
+    box-sizing: border-box;
+    margin-top: 10px;
+    width: 100%;
+    height: 150px;
+    border: 1px solid #cfcfcf;
+}
+.pot{
+    box-sizing: border-box;
+    float: left;
+    width: 20%;
+    border-right: 1px solid #cfcfcf;
+    height: 100%;
+}
+.potlist{
+    height: 100%;
+    width: 100%;
+}
+.pottitle {
+    height: 70px;
+    width: 100%;
+}
+.potpic{
+    display:block;
+    float: left;
+    height: 60px;
+    width: 60px;
+    box-sizing: border-box;
+    margin: 5px 5px 0 10px;
+}
+.potpic img {
+    width: 100%;
+    height: 100%;
+}
+.pottext {
+    display: block;
+    float: left;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-left: 10px;
+}
+.potline {
+    width: 100%;
+    height: 25px;
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: 550;
+    letter-spacing: 2px;
+    margin-left: 10px;
+    box-sizing: border-box;
+}
 /* 底部 */
 .footer{
     margin-top: 20px;
     width: 100%;
-    height: 210px;
-    background-color: rgb(247, 245, 245);
+    height: 340px;
+    background-color: #efefef;
 }
 
 .footerLine {
@@ -66,6 +180,7 @@
     width: 16.5%;
     background-color: #efefef;
     /* padding-left: 20%; */
+    border-bottom: 2px solid #d0d0d0;
 }
 .footbox {
     width: 100%;
@@ -98,4 +213,24 @@
 .topLine li:hover {
     background-color: #8a282a;
     color: #fff;
+}
+
+/* 新增footer内容 */
+.padding-top {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.foot-line {
+    border-bottom: 1px solid #ccc;
+    font-size: 12px;
+    margin-top: 10px;;
+}
+
+.img {
+    width: 457px;
+    height: 40px;
+    display: block;
+    margin: 12px auto;
+    /* margin-top: 12px; */
 }

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outer {
+            height: 320px;
+            position: relative;
+            overflow: hidden;
+            width: 600px;
+        }
+
+        .rightbig {
+            /* width: 1800px; */
+            height: 320px;
+            position: absolute;
+            left: -600px;
+        }
+
+        .rightbig img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .rightbig li {
+            width: 600px;
+            height: 320px;
+            float: left;
+        }
+
+        #navpot {
+            position: absolute;
+            bottom: 10px;
+            /* left: 200px; */
+            z-index: 999;
+            height: 10px;
+            /* width: 60px; */
+        }
+
+        #navpot a {
+            box-sizing: border-box;
+            display: block;
+            width: 10px;
+            height: 10px;
+            background-color: #808080;
+            border-radius: 50%;
+            float: left;
+            margin-left: 10px;
+            opacity: 0.5;
+            /* filter: alpha(opacity=50); */
+        }
+
+        #navpot a:hover {
+            background-color: #000;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            // 初始化
+            var imgList = document.getElementById("rightbig");
+            var imgArr = document.getElementsByTagName("img");
+            imgList.style.width = 600 * imgArr.length + "px";
+            //设置按钮居中
+            var navpot = document.getElementById("navpot");
+            var outer = document.getElementById("outer");
+            navpot.style.left = (outer.offsetWidth - navpot.offsetWidth) / 2 + "px";
+
+            var index = 1;
+            var allA = document.getElementsByTagName("a");
+            allA[index].style.backgroundColor = "black"
+
+            // 点击超链接切换到指定图片
+            for (var i = 0; i < allA.length; i++) {
+                allA[i].number = i;
+                allA[i].onclick = function () {
+                    // clearInterval(timer);
+                    index = this.number;
+                    imgList.style.left = -600 * index + "px";
+                    // console.log(index);
+                    setA();
+                }
+            }
+
+            aotoChange();
+
+            function setA() {
+                for (var i = 0; i < allA.length; i++) {
+                    allA[i].style.backgroundColor = "";
+                    // 内联样式表比hover优先级高 将值设为空 将会是css设置的颜色
+                }
+                allA[index].style.backgroundColor = "#000";
+            }
+            var timer;
+            // 自动切换图片
+            function aotoChange() {
+                timer = setInterval(function () {
+                    index++;
+                    index %= imgArr.length;
+                    // move(imgList, "left", -520 * inedx, 20, function () {
+                    //     setA();
+                    // })
+                    imgList.style.left = -600 * index + "px";
+                    console.log(index);
+                    setA();
+                }, 3000)
+            }
+        };
+    </script>
+    <link rel="stylesheet" type="text/css" href="orginal.css">
+</head>
+
+<body>
+    <div id="outer">
+        <ul class="rightbig" id="rightbig">
+            <li><img src="./images/pic1.jpg"></li>
+            <li><img src="./images/pic2.jpg"></li>
+            <li><img src="./images/pic3.jpg"></li>
+        </ul>
+        <div id="navpot">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+    </div>
+</body>
+
+</html>

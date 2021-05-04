@@ -185,8 +185,8 @@
 }
 
 .min-botbox {
-    height: 205px;
-    width: 45%;
+    height: 100px;
+    width: 33%;
     margin-top: 10px;
     box-sizing: border-box;
     font-size: 5px;
@@ -195,20 +195,24 @@
 
 .min-botpicbox {
     width: 100%;
-    height: 203px;
+    height: 100px;
     padding: 3px;
     box-sizing: border-box;
-    border: 1px solid rgb(245, 245, 245);
+    /* border: 1px solid rgb(245, 245, 245); */
 }
 
 .min-botpicbox img{
     width: 100%;
-    height: 129px;
-    margin-bottom: 10px;
+    height: 80px;
+    /* margin-bottom: 10px; */
 }
 
 .min-internal {
     margin-left: 8%;
+}
+
+.min-topdescription {
+    font-weight: 600;
 }
 
 /* 新增footer内容 */

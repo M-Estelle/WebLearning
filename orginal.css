@@ -50,6 +50,10 @@ body,html {
  /* overflow-x: hidden; */
 }
 
+body {
+    min-width: 1474px;
+    overflow-x: scroll;
+}
 .all {
     height: 100%;
     width: 100%;

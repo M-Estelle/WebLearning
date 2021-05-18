@@ -63,7 +63,9 @@
             // 初始化
             var imgList = document.getElementById("rightbig");
             var imgArr = document.getElementsByTagName("img");
-            imgList.style.width = 600 * imgArr.length + "px";
+            var wpx = imgArr[1].offsetWidth;
+            console.log(wpx);
+            imgList.style.width = wpx * imgArr.length + "px";
             //设置按钮居中
             var navpot = document.getElementById("navpot");
             var outer = document.getElementById("outer");
@@ -79,7 +81,7 @@
                 allA[i].onclick = function () {
                     // clearInterval(timer);
                     index = this.number;
-                    imgList.style.left = -600 * index + "px";
+                    imgList.style.left = -wpx * index + "px";
                     // console.log(index);
                     setA();
                 }
@@ -103,8 +105,8 @@
                     // move(imgList, "left", -520 * inedx, 20, function () {
                     //     setA();
                     // })
-                    imgList.style.left = -600 * index + "px";
-                    console.log(index);
+                    imgList.style.left = -wpx * index + "px";
+                    // console.log(index);
                     setA();
                 }, 3000)
             }

@@ -1,0 +1,39 @@
+.s_box {
+    width: 700px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    height: 560px;
+    padding: 0 20px;
+}
+.s_head {
+    width: 100%;
+    text-align: center;
+    font-size:25px;
+    line-height: 50px;
+    height: 50px;
+    border-bottom: 3px solid #000;
+}
+
+.s_line {
+    margin-top: 10px;
+    font-size: 15px;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 15px;
+   margin-bottom: 10px;
+}
+
+.textin {
+   position: absolute;
+    left: 100px;
+    display: inline-block;
+}
+
+.area {
+    height: 85px;
+}
+ 
+/* button{
+    height: 25px;
+    width:30px;
+} */

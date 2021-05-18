@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="orginal.css">
+    <link rel="stylesheet" type="text/css" href="sign.css">
+
+    <script src="./sign.js"></script>
+</head>
+
+<body>
+    <div class="all">
+        <!-- 固定顶部 -->
+        <div class="topsetWrap">
+            <div class="topSet w">
+                <img src="./images/collct.png" class="topPic">
+                <span>收藏</span> <span>|</span> <span>HI!</span> <span>欢迎来订阅</span> <span>！</span>
+                <span class="topText">[请登录]</span> <span class="topText">[免费注册]</span>
+                <span class="floatRight topRight">客户服务</span> <span class="floatRight topRight">网站导航</span>
+                <span class="floatRight topRight">我的购物车</span>
+            </div>
+        </div>
+        <!-- 顶部图片 -->
+        <div class="topNav w">
+            <img src="./images/top2.jfif" class="topone">
+            <img src="./images/top3.jpg" class="toptwo">
+        </div>
+        <!-- 顶部导航栏 -->
+        <div class="topLine" style="background-color: rgb(207, 57, 57);">
+            <ul class="clearfix">
+                <li>首页</li>
+                <li>最新上架</li>
+                <li>品牌活动</li>
+                <li>今日新单</li>
+                <li>团购</li>
+                <li>限时选购</li>
+                <li>原厂直供</li>
+            </ul>
+        </div>
+        <!-- 注册主体部分 -->
+        <div class="s_box">
+            <div class="s_head">用户注册</div>
+            <form onsubmit="checkForm()">
+                <div class="s_line">用户名：<input id="userNames" onchange="checkUserName()" type="text" class="textin"
+                        placeholder="请输入用户名"></div>
+                <div class="s_line">邮箱地址：<input class="textin" placeholder="请输入邮箱地址"></div>
+                <div class="s_line">设置密码：<input id="userPwd" onchange="checkPassword()" type="password" class="textin">
+                </div>
+                <div class="s_line">
+                    <div class="textin">
+                        6-20个字符，由字母、数字和符号两种以上组合
+                    </div>
+                </div>
+                <div class="s_line">确认密码：<input id="userRePwd" onchange="checkPassword()" type="password"
+                        class="textin">
+                </div>
+                <div class="s_line">真实姓名：<input class="textin" placeholder="请输入真实姓名"></div>
+                <div class="s_line">您的性别：
+                    <div class="textin">
+                        <input type="radio" name="sex" value="male">男
+                        <input type="radio" name="sex" value="female">女
+                    </div>
+                </div>
+                <div class="s_line">上传头像：<button class="textin">浏览…</button></div>
+                <div class="s_line">您的手机：<input class="textin" placeholder="请输入您的手机号"></div>
+                <div class="s_line">单位名称：<input class="textin" placeholder="请输入单位名称"></div>
+                <div class="s_line">单位地址：
+                    <div class="textin">
+                        <td><select name="province" id="province">
+                                <option>-请选择省份-</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="city" id="city">
+                                <option>-请选择城市-</option>
+                            </select>
+                        </td>
+                        <td><select name="area" id="area">
+                                <option>-请选择区域-</option>
+                            </select>
+                        </td>
+                    </div>
+                </div>
+                <div class="s_line"><input class="textin" placeholder="请输入街道地址"></div>
+                <div class="s_line">您的爱好：
+                    <div class="textin">
+                        <input type="checkbox">购物
+                        <input type="checkbox">影视
+                        <input type="checkbox">餐饮
+                    </div>
+                </div>
+                <div class="s_line area">协议内容：
+                    <textarea class="textin" rows="5" cols="30"></textarea>
+                </div>
+                <div class="s_line"><button type="submit"  class="textin">提交</button></div>
+            </form>
+        </div>
+</body>
+
+</html>

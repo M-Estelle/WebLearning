@@ -29,8 +29,9 @@
 }
 /* 主体左边盒子 */
 .rightbig{
-    width: 72%;
+    /* width: 72%; */
     height: 320px;
+    position: absolute;
 }
 
 .rightbig img{
@@ -233,4 +234,43 @@
     display: block;
     margin: 12px auto;
     /* margin-top: 12px; */
+}
+/* 轮播图样式 */
+#outer {
+    position: relative;
+    overflow: hidden;
+    width: 807px;
+    height: 320px;
+}
+
+.rightbig li {
+    width: 807px;
+    height: 320px;
+    float: left;
+}
+
+#navpot {
+    position: absolute;
+    bottom: 10px;
+    /* left: 200px; */
+    z-index: 999;
+    height: 10px;
+    /* width: 60px; */
+}
+
+#navpot a {
+    box-sizing: border-box;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #808080;
+    border-radius: 50%;
+    float: left;
+    margin-left: 10px;
+    opacity: 0.5;
+    /* filter: alpha(opacity=50); */
+}
+
+#navpot a:hover {
+    background-color: #000;
 }

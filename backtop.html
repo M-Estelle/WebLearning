@@ -8,6 +8,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" type="text/css" href="back.css">
+    <!-- <script src="./backLogin.js"></script> -->
 </head>
 
 <body>
@@ -51,14 +52,42 @@
                     <a href="#">帮助</a>
                 </li>
                 <li><a href="#">关于</a></li>
-                <li><a target="_parent" href="sign.html">退出</a></li>
+                <li><a target="_parent" href="#" onclick="bakclogin()">登录</a></li>
             </ul>
             <div class="topuser">
                 <img src="./images/user.png" alt="">
-                <span>admin</span><span>消息</span><span>5</span>
+                <span id="user">您还未登录</span>
             </div>
         </div>
     </div>
 </body>
+
+<script>
+
+    function bakclogin() {
+        var flag = 0;
+        do {
+            var userName = prompt("请输入用户名");
+            var userPwd = prompt("请输入密码");
+
+            for (var i = 0; i < user.length; i++) {
+                if (user[i][0] == userName && user[i][1] == userPwd) {
+                    alert("用户登录成功，欢迎<" + user[i][0] + ">使用本系统");
+                    document.getElementById("user").innerHTML = user[i][0] + "</span><span>消息</span><span>" + user[i][2];
+                    flag = 1;
+                    break;
+                }
+            }
+            if (!userName && !userPwd) {
+                flag = 2;
+            }
+            if (flag == 0) {
+                alert("用户名或密码错误，请重新登录");
+            }
+        }
+        while (flag == 0)
+    }
+    bakclogin();
+</script>
 
 </html>

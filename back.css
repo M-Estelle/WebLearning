@@ -111,6 +111,7 @@ img {
     color: #fff;
     margin-left: 5px;
     line-height: 16px;
+    width: auto;
 }
 
 .topright {
@@ -183,7 +184,7 @@ img {
  .wordbox {
      box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.04);
      width: 88%;
-     height: 660px;
+     height: 690px;
      position: relative;
  }
  .frontbox {
@@ -224,12 +225,7 @@ img {
      bottom: 20px;
      right: 30px;
  }
- #user {
-     display: block;
- }
- #passage {
-     display: none;
- }
+
  .table {
      /* border: 1px solid #e0e8ee ; */
      border-color:#e0e8ee; 

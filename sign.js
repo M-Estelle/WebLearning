@@ -68,6 +68,7 @@ function onFoucs() {
 function onBlur() {
     this.style.backgroundColor = "#FFFFFF";
     this.style.color = "#000000";
+    console.log("onblur");
 }
 //验证用户名是否有效
 function checkUserName() {
@@ -78,6 +79,7 @@ function checkUserName() {
         useName.focus();
         return false; //用户名不能为空
     }
+    return true;
 }
 //验证密码和确认密码是否有效
 function checkPassword() {
@@ -105,18 +107,24 @@ function checkPassword() {
     }
     return false;
 }
-//else
+
 //表单提交时，触发该函数
 function checkForm() {
-    return checkUserName() && checkPassword();
+    // setTimeout(() => {
+    //     window.location.href = "https://www.baidu.com"
+    // }, 3000);
+    if (checkUserName() && checkPassword())
+        return
+    else
+        window.location.href = "https://www.baidu.com";
 }
 
 //窗口加载完毕时，完成事件绑定和初始化
 window.onload = function () {
     //初始化省份下拉列表
     initProvince();
-    checkUserName();
-    checkPassword();
+    // checkUserName();
+    // checkPassword();
     //为下拉列表绑定onchange事件
     province.onchange = provinceChange;
     city.onchange = cityChange;
@@ -128,7 +136,7 @@ window.onload = function () {
         var type = inputs[i].type;
         if (type == "text" || type == "password") {
             inputs[i].onfocus = onFoucs;
-            inputs.onBlur = onBlur;
+            inputs[i].onblur = onBlur;
             // console.log(inputs[i]);
         }
     }

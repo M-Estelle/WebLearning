@@ -8,6 +8,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" type="text/css" href="back.css">
+    <!-- <script src="./backLogin.js"></script> -->
 </head>
 
 <body>
@@ -19,7 +20,7 @@
         <div class="frontbox">
             <table width="98%" cellspacing="0" border="1" class="table">
                 <thead class="title">
-                    <td width="3%"><input type="checkbox"></td>
+                    <td width="3%"><input id="cheackAll" onchange="selectAll()" type="checkbox"></td>
                     <td width="10%">缩略图</td>
                     <td width="20%">商品名称</td>
                     <td width="10%">商品类别</td>
@@ -30,9 +31,84 @@
                     <td width="10%">操作</td>
                 </thead>
                 <tr class="normal">
-                    <td><input type="checkbox"></td>
+                    <td><input name="checkItem" type="checkbox"></td>
                     <td>
                         <div class="picbox"><img src="./images/yifu2.jpg" alt=""></div>
+                    </td>
+                    <td>
+                        <div class="tabletext">欧美大牌五分袖收腰显瘦连衣裙欧美大牌五分袖收腰显瘦连衣裙欧美大牌五分袖收腰显瘦连衣裙</div>
+                    </td>
+                    <td>女装</td>
+                    <td>87</td>
+                    <td>¥988</td>
+                    <td>2021-3-3 03:32</td>
+                    <td>已审核</td>
+                    <td class="look">查看 <span class="delete">删除</span></td>
+                </tr>
+                <tr class="normal">
+                    <td><input name="checkItem" type="checkbox"></td>
+                    <td>
+                        <div class="picbox"><img src="./images/yifu2.jpg" alt=""></div>
+                    </td>
+                    <td>
+                        <div class="tabletext">欧美大牌五分袖收腰显瘦连衣裙欧美大牌五分袖收腰显瘦连衣裙欧美大牌五分袖收腰显瘦连衣裙</div>
+                    </td>
+                    <td>女装</td>
+                    <td>87</td>
+                    <td>¥988</td>
+                    <td>2021-3-3 03:32</td>
+                    <td>已审核</td>
+                    <td class="look">查看 <span class="delete">删除</span></td>
+                </tr>
+                <tr class="normal">
+                    <td><input name="checkItem" type="checkbox"></td>
+                    <td>
+                        <div class="picbox"><img src="./images/yifu1.jpg" alt=""></div>
+                    </td>
+                    <td>
+                        <div class="tabletext">欧美大牌五分袖收腰显瘦连衣裙欧美大牌五分袖收腰显瘦连衣裙欧美大牌五分袖收腰显瘦连衣裙</div>
+                    </td>
+                    <td>女装</td>
+                    <td>87</td>
+                    <td>¥988</td>
+                    <td>2021-3-3 03:32</td>
+                    <td>已审核</td>
+                    <td class="look">查看 <span class="delete">删除</span></td>
+                </tr>
+                <tr class="normal">
+                    <td><input name="checkItem" type="checkbox"></td>
+                    <td>
+                        <div class="picbox"><img src="./images/yifu2.jpg" alt=""></div>
+                    </td>
+                    <td>
+                        <div class="tabletext">欧美大牌五分袖收腰显瘦连衣裙欧美大牌五分袖收腰显瘦连衣裙欧美大牌五分袖收腰显瘦连衣裙</div>
+                    </td>
+                    <td>女装</td>
+                    <td>87</td>
+                    <td>¥988</td>
+                    <td>2021-3-3 03:32</td>
+                    <td>已审核</td>
+                    <td class="look">查看 <span class="delete">删除</span></td>
+                </tr>
+                <tr class="normal">
+                    <td><input name="checkItem" type="checkbox"></td>
+                    <td>
+                        <div class="picbox"><img src="./images/yifu3.jpg" alt=""></div>
+                    </td>
+                    <td>
+                        <div class="tabletext">欧美大牌五分袖收腰显瘦连衣裙欧美大牌五分袖收腰显瘦连衣裙欧美大牌五分袖收腰显瘦连衣裙</div>
+                    </td>
+                    <td>女装</td>
+                    <td>87</td>
+                    <td>¥988</td>
+                    <td>2021-3-3 03:32</td>
+                    <td>已审核</td>
+                    <td class="look">查看 <span class="delete">删除</span></td>
+                </tr>
+                <tr class="normal">
+                    <td><input name="checkItem" type="checkbox"></td>
+                    <td>
+                        <div class="picbox"><img src="./images/yifu4.jpg" alt=""></div>
                     </td>
                     <td>
                         <div class="tabletext">欧美大牌五分袖收腰显瘦连衣裙欧美大牌五分袖收腰显瘦连衣裙欧美大牌五分袖收腰显瘦连衣裙</div>
@@ -54,5 +130,43 @@
         </div>
     </div>
 </body>
+<script>
+    function selectAll() {
+        var items = document.getElementsByName("checkItem");
+        var cheackall = document.getElementById("cheackAll");
+        console.log(items);
+        console.log(cheackall);
+        for (var i = 0; i < items.length; i++) {
+            items[i].checked = cheackall.checked;
+        }
+
+    }
+    function selectOther() {
+        var items = document.getElementsByName("checkItem");
+        var cheackall = document.getElementById("cheackAll");
+        for (var i = 0; i < items.length; i++) {
+            items[i].checked = !items[i].checked;
+        }
+    }
+
+    function setcheckItem() {
+        var items = document.getElementsByName("checkItem");
+        var cheackall = document.getElementById("cheackAll");
+        for (var k = 0; k < items.length; k++) {
+            items[k].onclick = function () {
+                var flag = true;
+                for (var j = 0; j < items.length; j++) {
+                    if (items[j].checked == false) {
+                        console.log(items[j]);
+                        flag = false;
+                    }
+                }
+                console.log(cheackall);
+                cheackall.checked = flag;
+            }
+        }
+    }
+    setcheckItem();
+</script>
 
 </html>

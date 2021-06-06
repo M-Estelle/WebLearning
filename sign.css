@@ -4,6 +4,7 @@
     box-sizing: border-box;
     height: 560px;
     padding: 0 20px;
+    background: url(./images/zhuce_pic.jpg) no-repeat right;
 }
 .s_head {
     width: 100%;

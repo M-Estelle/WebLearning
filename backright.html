@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="back.css">
     <!-- <script src="./backLogin.js"></script> -->
 </head>
@@ -122,6 +122,7 @@
                 </tr>
             </table>
             <div class="donwtable">
+                <input type="button" value="添加" class="btn">
                 <span>当前在第 1 页</span>
                 <input type="submit" value="上一页">
                 <input type="submit" value="下一页">
@@ -167,6 +168,31 @@
         }
     }
     setcheckItem();
+    $(function () {
+        $('.normal').on("click", ".delete", function (e) {
+            // console.log($(this));
+            $(this).parent().parent().remove();
+        })
+    })
+
+    $('.btn').on("click", function (e) {
+        var table = $(".table").append(' <tr class="normal"><td><input name="checkItem" type="checkbox"></td><td class="max"><div class="picbox"><img src="./images/nopic.gif"/></div><input type="file"/></td><td><input type="text" class="tabletext" placeholder="请输入商品名"/></td><td><input type="text" class="tabletext" placeholder="请输入类别"/></td><td><input type="text" class="tabletext" placeholder="请输入数量"/></td><td><input type="text" class="tabletext" placeholder="请输入单价"/></td><td><input type="date" /></td> <td></td><td class="look"></td></tr>')
+    })
+
+
+    $(".table").on("change", "input[type='file']", function (e) {
+        var that = this;
+        console.log(that);
+        var file = $(".table input[type='file]").attr("value");
+        console.log(file);
+        if (window.FileReader) {
+            var fr = new FileReader();
+            fr.onloadend = function (e) {
+                console.log($(that));
+                // $(that).prev().prev().attr(e.target.result);
+            }
+        }
+    })
 </script>
 
 </html>

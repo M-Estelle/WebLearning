@@ -265,3 +265,22 @@ img {
     -webkit-box-orient: vertical;
     margin: auto 20px;
  }
+
+ .btn {
+    display: inline-block;
+    width: 60px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 15px;
+    font-size: 1px;
+    text-align: center;
+    background: #4EB7BA;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+ }
+
+ .max {
+     max-width: 140px;
+     overflow-x: hidden;
+ }
